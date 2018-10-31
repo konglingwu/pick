@@ -1,0 +1,120 @@
+.login {
+    height: 100vh;
+    background-image: url(@/../assets/images/bg.svg);
+    background-repeat:  no-repeat;
+    background-size: 100%;
+    background-position: center 110px;
+    background-color: #f0f2f5;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    .content {
+      padding: 112px 0 24px;
+      flex: 1 1;
+      .top {
+        text-align: center;
+        .header {
+          height: 44px;
+          line-height: 44px;
+          a {
+            text-decoration: none;
+            color: #1890ff;
+            background-color: transparent;
+            outline: none;
+            cursor: pointer;
+            img {
+              height: 44px;
+              vertical-align: top;
+              margin-right: 16px;
+            }
+            span {
+              font-size: 33px;
+              color: rgba(0,0,0,.85);
+              font-weight: 600;
+              position: relative;
+              top: 2px;
+              font-family: "Myriad Pro","Helvetica Neue",Arial,Helvetica,sans-serif;
+            }
+          }
+        }
+        .desc {
+          font-size: 14px;
+          color: rgba(0,0,0,.45);
+          margin-top: 12px;
+          margin-bottom: 40px;
+        }
+      }
+      .main {
+        width: 368px;
+        margin: 0 auto;
+        .login_main {
+          .title {
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            height: 40px;
+            color: #40a9ff;
+            font-weight: 500;
+            &:hover {
+              color: #1890ff;
+              cursor: pointer;
+            };
+          }
+          .border {
+            margin: 0 auto;
+            width: 128px;
+            height: 2px;
+            background: red;
+            margin-bottom: 20px;
+            transform: translate3d(0px, 0px, 0px);
+            background-color: #1890ff;
+            transform-origin: 0 0;
+          }
+          .form {
+            font-family: "Monospaced Number","Chinese Quote",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;
+            .account,.pwd {
+              position: relative;
+              img {
+                position: absolute;
+                width: 16px;
+                height: 16px;
+                z-index: 999;
+                left: 6px;
+                top: 12px;
+              }
+            }
+            .check-pwd {
+              overflow: hidden;
+              a {
+                float: right;
+                cursor: pointer;
+                color: #1890ff;
+                background-color: transparent;
+                outline: none;
+                text-decoration: none;
+                cursor: pointer;
+              }
+            }
+            .captch {
+               display: block;
+               height: 36px;
+               cursor: pointer;
+               .el-input {
+                display: inline-block;
+                width: 71.5%;
+                // width: calc(100% - 104px);
+                position: relative;
+                bottom: 13px;
+               }
+            }
+            .login-btn {
+              button {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
